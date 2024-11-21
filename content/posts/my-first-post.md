@@ -16,6 +16,21 @@ tags: ["tech"]
 #    hidden: true # only hide on current single page
 ---
 
+## This is the code for the content
+
+```cpp
+#include<iostream>
+#define X Y
+class X {
+private:
+    int y;
+};
+int main()
+{
+    std::cout << "hello world" << std::endl;
+}
+```
+
 ## My First Post
 
 This is my first blog post!
@@ -31,13 +46,3 @@ Phasellus rutrum sem id nisl suscipit, eget cursus augue condimentum. In sceleri
 ## This is another section
 
 Here is some more content
-
-## This is the code for the content
-
-```cpp
-#include<iostream>
-int main()
-{
-    std::cout << "hello world" << std::endl;
-}
-```
