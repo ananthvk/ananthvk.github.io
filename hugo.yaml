@@ -15,57 +15,131 @@ buildFuture: false
 buildExpired: false
 enableEmoji: true
 
-# Analytics
-# googleAnalytics: UA-123-45
-
 minify:
-  disableXML: true
-  minifyOutput: true
+    disableXML: true
+    minifyOutput: true
 
-  
 languages:
-  en:
-    languageName: "English"
-    weight: 1
-    taxonomies:
-      category: categories
-      tag: tags
-      series: series
-    menu:
-      main:
-        - name: Archive
-          url: archives
-          weight: 5
-        - name: Search
-          url: search/
-          weight: 10
-        - name: Tags
-          url: tags/
-          weight: 10
+    en:
+        languageName: "English"
+        weight: 1
+        taxonomies:
+            category: categories
+            tag: tags
+            series: series
+        menu:
+            main:
+                - name: Archive
+                  url: archives
+                  weight: 5
+                - name: Search
+                  url: search/
+                  weight: 10
+                - name: Tags
+                  url: tags/
+                  weight: 10
 
 # Parameters
 params:
-  env: production
-  title: "Ananthanarayanan V's Blog"
-  description: "TODO: Fill description here"
-  keywords: [Blog, TechBlog, GeneralBlog, Tech]
-  author: Me
-  DateFormat: "January 2, 2006"
-  defaultTheme: auto # dark, light
-  disableThemeToggle: false
+    env: production
+    title: "Ananthanarayanan V's Blog"
+    description: "TODO: Fill description here"
+    keywords: [Blog, TechBlog, GeneralBlog, Tech]
+    author: Ananthanarayanan V
+    DateFormat: "2 Jan, 2006"
+    defaultTheme: auto
 
-  ShowReadingTime: true
-  ShowShareButtons: true
-  ShowPostNavLinks: true
-  ShowBreadCrumbs: true
-  ShowCodeCopyButtons: false
-  ShowWordCount: true
-  ShowRssButtonInSectionTermList: true
-  UseHugoToc: true
-  disableSpecial1stPost: false
-  disableScrollToTop: false
-  comments: false
-  hidemeta: false
-  hideSummary: false
-  showtoc: false
-  tocopen: false
+    # Settings related to each post
+    ShowReadingTime: true
+    ShowShareButtons: true
+    ShowPostNavLinks: true
+    ShowBreadCrumbs: true
+    ShowCodeCopyButtons: false
+    ShowWordCount: true
+    ShowRssButtonInSectionTermList: true
+    UseHugoToc: true
+    disableSpecial1stPost: false
+    disableScrollToTop: false
+    comments: false
+    hidemeta: false
+    hideSummary: false
+    showtoc: false
+    tocopen: false
+
+    assets:
+        disableHLJS: true
+        disableFingerprinting: true
+        #favicon: "<link / abs url>"
+        #favicon16x16: "<link / abs url>"
+        #favicon32x32: "<link / abs url>"
+        #apple_touch_icon: "<link / abs url>"
+        #safari_pinned_tab: "<link / abs url>"
+
+    label:
+        text: "Home"
+        icon: /apple-touch-icon.png
+        iconHeight: 35
+
+    # Enable profile mode, which shows my profile in the home page, with a link to the posts page
+    profileMode:
+        enabled: true
+        title: Ananthanarayanan V's Blog
+        subtitle: "This is subtitle"
+        imageUrl: "https://avatars.githubusercontent.com/u/53365901?v=4"
+        imageWidth: 240
+        imageHeight: 240
+        imageTitle: My profile photo
+        buttons:
+            - name: Posts
+              url: posts
+            - name: Tags
+              url: tags
+
+    socialIcons:
+        - name: x
+          url: "https://x.com/ananthvk7"
+        - name: github
+          url: "https://github.com/ananthvk"
+        - name: linkedin
+          url: "https://www.linkedin.com/in/ananth-vk/"
+
+    #analytics:
+    #  google:
+    #    SiteVerificationTag: "XYZabc"
+    #  bing:
+    #    SiteVerificationTag: "XYZabc"
+    #  yandex:
+    #    SiteVerificationTag: "XYZabc"
+
+    cover:
+        hidden: true # hide everywhere but not in structured data
+        hiddenInList: true # hide on list pages and home
+        hiddenInSingle: true # hide on single page
+
+    editPost:
+        URL: "https://github.com/ananthvk/ananthvk.github.io/content"
+        Text: "Suggest Changes" # edit text
+        appendFilePath: true # to append file path to Edit link
+
+    # for search
+    # https://fusejs.io/api/options.html
+    fuseOpts:
+        isCaseSensitive: false
+        shouldSort: true
+        location: 0
+        distance: 1000
+        threshold: 0.4
+        minMatchCharLength: 0
+        limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
+        keys: ["title", "permalink", "summary", "content"]
+
+# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+pygmentsUseClasses: true
+markup:
+  highlight:
+    # anchorLineNos: true
+    codeFences: true
+    guessSyntax: true
+    lineNos: true
+    # noClasses: false
+    style: monokai

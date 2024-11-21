@@ -1,7 +1,19 @@
 ---
-date: '2024-11-21T23:36:31+05:30'
-draft: true
 title: 'My First Post'
+date: '2024-11-21T23:36:31+05:30'
+draft: false
+showToc: true
+TocOpen: false
+hideSummary: false
+searchHidden: true
+UseHugoToc: true
+tags: ["tech"]
+#cover:
+#    image: "<image path/url>"
+#    alt: "<alt text>"
+#    caption: "<text>"
+#    relative: false # when using page bundles set this to true
+#    hidden: true # only hide on current single page
 ---
 
 ## My First Post
@@ -16,3 +28,16 @@ Integer facilisis viverra enim, a blandit erat pulvinar at. Praesent sed ex feug
 
 Phasellus rutrum sem id nisl suscipit, eget cursus augue condimentum. In scelerisque tellus a tellus consectetur, a lacinia ligula laoreet. Sed pharetra eget justo in tincidunt. Sed tempor porta tincidunt. Integer ultrices mi sit amet molestie suscipit. Morbi eget vehicula felis. Donec at placerat odio. Integer quis semper turpis. Quisque urna neque, bibendum in mi ac, semper aliquet sem. Sed posuere hendrerit ligula, ut sodales elit tincidunt at. Maecenas non urna condimentum, rhoncus libero ac, porttitor eros. Nulla magna lorem, laoreet ut justo quis, placerat iaculis eros. Phasellus sagittis, urna quis feugiat fringilla, tellus mauris interdum est, at vehicula diam lectus in urna. Maecenas molestie ex nibh, ut ornare augue feugiat congue. Quisque tristique justo a varius mattis.
 
+## This is another section
+
+Here is some more content
+
+## This is the code for the content
+
+```cpp
+#include<iostream>
+int main()
+{
+    std::cout << "hello world" << std::endl;
+}
+```
