@@ -1,3 +1,71 @@
+# General settings
 baseURL: https://ananthvk.github.io/
 languageCode: en-us
-title: Ananthvk's Blog
+title: "Ananthanarayanan V's Blog"
+copyright: "© [Ananthanarayanan Venkitakrishnan](https://github.com/ananthvk)"
+theme: PaperMod
+mainsections: ["posts"]
+pagination:
+    pagerSize: 8
+
+# Other settings related to building of content
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+
+# Analytics
+# googleAnalytics: UA-123-45
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+  
+languages:
+  en:
+    languageName: "English"
+    weight: 1
+    taxonomies:
+      category: categories
+      tag: tags
+      series: series
+    menu:
+      main:
+        - name: Archive
+          url: archives
+          weight: 5
+        - name: Search
+          url: search/
+          weight: 10
+        - name: Tags
+          url: tags/
+          weight: 10
+
+# Parameters
+params:
+  env: production
+  title: "Ananthanarayanan V's Blog"
+  description: "TODO: Fill description here"
+  keywords: [Blog, TechBlog, GeneralBlog, Tech]
+  author: Me
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto # dark, light
+  disableThemeToggle: false
+
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: false
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
