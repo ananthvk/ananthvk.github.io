@@ -31,6 +31,25 @@ int main()
 }
 ```
 
+# Markdown examples
+
+# Heading 1
+## Heading 2
+### Heading 3
+#### Heading 4
+##### Heading 5
+###### Heading 6
+
+- This is the first line
+- This is the second point
+
+| X | Y | Z |
+|---|---|---|
+| 1 | 2 | True |
+| 2 | 3 | False |
+
+
+
 ## My First Post
 
 This is my first blog post!

@@ -1,0 +1,40 @@
+/* Catppuccin Latte */
+:root {
+    --gap: 24px;
+    --content-gap: 20px;
+    --nav-width: 1024px;
+    --main-width: 720px;
+    --header-height: 60px;
+    --footer-height: 60px;
+    --radius: 8px;
+    --theme: #eff1f5; /* Base */
+    --entry: #dce0e8; /* Crust */
+    --primary: #4c4f69; /* Text */
+    --secondary: #5c5f77; /* Subtext1 */
+    --tertiary: #dce0e8; /* Crust */
+    --content: #4c4f69; /* Text */
+    --code-block-bg: #e6e9ef; /* Mantle */
+    --code-bg: #e6e9ef; /* Mantle */
+    --border: #7287fd; /* Lavendar */
+}
+
+/* https://catppuccin.com/palette */
+.dark {
+    --theme: #24273a; /* Base */
+    --entry: #363a4f; /* Surface0 */
+    --primary: #cad3f5; /* Text */
+    --secondary: #b8c0e0; /* Subtext1 */
+    --tertiary: #181926; /* Crust */
+    --content: #cad3f5; /* Text */
+    --code-block-bg: #1e2030; /* Mantle */
+    --code-bg: #1e2030; /* Mantle */
+    --border: #b7bdf8; /* Lavendar */
+}
+
+.list {
+    background: var(--code-bg);
+}
+
+.dark.list {
+    background: var(--theme);
+}
