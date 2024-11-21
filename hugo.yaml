@@ -79,12 +79,15 @@ params:
         text: "Home"
         icon: /apple-touch-icon.png
         iconHeight: 35
+    
+    footer:
+        text: "Theme inspired by [Catppuccin](https://github.com/catppuccin/catppuccin)"
 
     # Enable profile mode, which shows my profile in the home page, with a link to the posts page
     profileMode:
         enabled: true
         title: Ananthanarayanan V's Blog
-        subtitle: "This is subtitle"
+        subtitle: "[TODO Add subtitle here]"
         imageUrl: "https://avatars.githubusercontent.com/u/53365901?v=4"
         imageWidth: 240
         imageHeight: 240
