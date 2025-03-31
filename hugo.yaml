@@ -1,5 +1,5 @@
 # General settings
-baseURL: https://blog.ananthvk.me/
+baseURL: https://ananthvk.github.io/
 languageCode: en-us
 title: "Ananthanarayanan V's Blog"
 copyright: "© [Ananthanarayanan Venkitakrishnan](https://github.com/ananthvk)"
@@ -85,13 +85,14 @@ params:
 
     # Enable profile mode, which shows my profile in the home page, with a link to the posts page
     profileMode:
+        author: Ananthanarayanan V
         enabled: true
-        title: Ananthanarayanan V's Blog
-        subtitle: "[TODO Add subtitle here]"
-        imageUrl: "https://avatars.githubusercontent.com/u/53365901?v=4"
-        imageWidth: 240
-        imageHeight: 240
-        imageTitle: My profile photo
+        title: Ananthanarayanan V's Profile & Blog
+        subtitle: "I really enjoy programming and love tinkering with my computer, I'm currently interested in C++ and backend development and I try to learn something new everyday."
+        # imageUrl: "https://avatars.githubusercontent.com/u/53365901?v=4"
+        # imageWidth: 240
+        # imageHeight: 240
+        # imageTitle: My profile photo
         buttons:
             - name: Posts
               url: posts
@@ -146,4 +147,3 @@ markup:
     lineNos: true
     noClasses: false
     style: catppuccin-macchiato
-
